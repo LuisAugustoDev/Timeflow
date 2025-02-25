@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header>
+      <nav class="navbar">
+          <div class="logo">
+              <img class="site-icon" src="assets/icone.svg" alt="Logo">
+              <p class="title">Timeflow</p>
+          </div>
+          <ul class="nav-itens">
+              <a id="home" href="index.html">Home</a>
+              <a id="desenvolvedores" href="desenvolvedores.html">Desenvolvedores</a>
+          </ul>
+      </nav>
+  </header>
+  <main>
+    <div class="container">
+    <table id="tabela-compromissos">
+      <caption class="legenda">
+        Agenda de Compromissos
+      </caption>
+      <thead>
+        <tr>
+          <th>Eventos</th>
+          <th>Horário</th>
+          <th>Local</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Acordar</td>
+          <td>6:00</td>
+          <td>Casa</td>
+        </tr>
+        <tr>
+          <td>Tomar café da manhã</td>
+          <td>7:00</td>
+          <td>Casa</td>
+        </tr>
+        <tr>
+          <td>Estudar</td>
+          <td>8:00</td>
+          <td>Casa</td>
+        </tr>
+        <tr>
+          <td>Academia</td>
+          <td>9:00</td>
+          <td>Academia</td>
+        </tr>
+        <tr>
+          <td>Praticar Programação</td>
+          <td>10:00</td>
+          <td>Casa</td>
+        </tr>
+        <tr>
+          <td>Se arrumar</td>
+          <td>11:30</td>
+          <td>Casa</td>
+        </tr>
+        <tr>
+          <td>Almoço</td>
+          <td>12:00</td>
+          <td>Casa</td>
+        </tr>
+        <tr>
+          <td>Escola</td>
+          <td>13:00</td>
+          <td>IFRN - Campus Santa Cruz</td>
+        </tr>
+        <tr>
+          <td>Voltar para casa</td>
+          <td>18:00</td>
+          <td>Casa</td>
+        </tr>
+        <tr>
+          <td>Dormir</td>
+          <td>22:00</td>
+          <td>Casa</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3"><strong>Total de compromissos:</strong> <span id="total-compromissos">0</span></td>
+        </tr>
+      </tfoot>
+
+    </table>
+    </div>
+    <div class="button-container">
+    <input class="gravar" type="button" value="Gravar" id="openPopup">
+    </div>
+
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span class="close-btn">&times;</span>
+        <h2>Adicionar Novo Evento</h2>
+
+
+        <label for="event-name">Nome do Evento:</label>
+        <input type="text" id="evento" placeholder="Digite o nome do evento">
+
+        <label for="event-time">Horário:</label>
+        <input type="time" id="horario">
+
+        <label for="event-location">Local:</label>
+        <input type="text" id="local" placeholder="Digite o local">
+
+        <button class="salvar" id="saveEvent" onclick="adicionarCompromisso()">Salvar Evento</button>
+      </div>
+    </div>
+
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="image-group">
+      <img src="assets/local.svg" alt="Local">
+        <p>IFRN - Campus Santa Cruz</p>
+      </div>
+      <div class="image-group">
+      <img src="assets/disciplina.svg" alt="Disciplina">
+        <p>Trabalho de Autoria Web</p>
+      </div>
+      <div class="image-group">
+      <img src="assets/professor.svg" alt="Professor">
+        <p>Prof. Marcelo Figueiredo Barbosa Júnior</p>
+      </div>
+      <div class="image-group">
+      <img src="assets/user.svg" alt="Alunos">
+        <p>Luís Augusto Fernandes Da Silva, Luis Miguel Teixeira Confessor, José Rikelmy Félix dos Santos</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

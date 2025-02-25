@@ -252,3 +252,25 @@ footer {
 .descricao-desenvolvedor {
   color: #818181;
 }
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-login {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 250px;
+>>>>>>> 5a1764a (Teste)
+>>>>>>> 05a9c76 (Teste login)
+}
